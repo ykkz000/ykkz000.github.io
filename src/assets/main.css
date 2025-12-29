@@ -1,0 +1,67 @@
+@import './base.css';
+
+:root {
+  --theme-background-color: #42b983;
+  --theme-card-color: rgba(200, 255, 200, 0.8);
+  --theme-text-color: white;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: flex-start;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  transition: 0.3s;
+  padding: 20px;
+  margin: 10px;
+  background-color: var(--theme-card-color);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-text {
+  color: var(--theme-text-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.child-flex-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
