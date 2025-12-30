@@ -14,14 +14,14 @@ export default defineConfig({
     },
   },
   server: {
-    port: 80,
+    port: 80/*,
     proxy: {
       '/api': {
-        target: 'http://localhost:8801/api/v1',
+        target: 'http://localhost:8000/api/v1',
         secure: false,
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
+        rewrite: (path) => path.replace(/^/api/, '')
       }
-    }
+    }*/
   }
 })
