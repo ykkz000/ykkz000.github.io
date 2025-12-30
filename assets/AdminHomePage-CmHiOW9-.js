@@ -1,1 +1,0 @@
-import{_ as o,c as s,h as t,o as c}from"./index-D5bbwRwp.js";const n={},r={class:"card"};function a(_,e){return c(),s("div",r,e[0]||(e[0]=[t("h1",null,"欢迎来到控制台",-1)]))}const l=o(n,[["render",a]]);export{l as default};
