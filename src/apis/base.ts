@@ -29,7 +29,7 @@ export interface Result<T> {
 export type ApiResultPromise<T> = Promise<AxiosResponse<Result<T>>>;
 
 const instance: AxiosInstance = axios.create({
-    baseURL: 'http://123.57.28.59:8000/api/v1',
+    baseURL: 'https://123.57.28.59:8000/api/v1',
     timeout: 5000,
     headers: {
         'Content-Type': 'application/json',
