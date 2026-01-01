@@ -50,5 +50,5 @@ function changePage(pageNumber: number, pageSize: number = 10) {
       });
 }
 
-changePage(0);
+changePage(1);
 </script>
